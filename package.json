@@ -1,0 +1,31 @@
+{
+  "name": "example-supertest",
+  "version": "1.0.0",
+  "description": "Example API testing using Supertest",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test-feature": "mocha ./test/steps/ --timeout 10000",
+    "test-contract": "mocha ./test/contracts/ --timeout 10000",
+    "test": "mocha ./test/steps/ ./test/contracts/ --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciovrl/example-supertest.git"
+  },
+  "author": "Márcio Lemos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marciovrl/example-supertest/issues"
+  },
+  "homepage": "https://github.com/marciovrl/example-supertest#readme",
+  "dependencies": {
+    "chai": "4.1.1",
+    "mocha": "^3.5.0",
+    "supertest": "3.0.0",
+    "joi": "^13.0.2",
+    "joi-assert": "0.0.3"
+  }
+}
