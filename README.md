@@ -5,7 +5,11 @@ Esse repositório tem como objetivo ser meu campo de treinamento e estudo de Sup
 
 Peguei a API `https://quartz-drain.glitch.me/` e desenvolvi a automação de um endpoint `products` testando os verbos/chamadas e o contrato.
 
-Reprodução:
+# Pré-condições:
+- Node instalado;
+- npm instalado.
+
+# Reprodução:
 
 1 - Clonar projeto:
 ```
