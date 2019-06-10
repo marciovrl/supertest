@@ -1,42 +1,42 @@
 # example-supertest
 Example of API tests using Supertest.
 
-Esse repositório tem como objetivo ser meu campo de treinamento e estudo de Supertest. (ad infinitum em construção... ).
+This repository aims to be the field of training and the study of Supertest.
 
-Peguei a API `https://quartz-drain.glitch.me/` e desenvolvi a automação de um endpoint `products` testando os verbos/chamadas e o contrato.
+I used the `https://quartz-drain.glitch.me/` API and developed the automation of an `/products` endpoint by testing the calls and the contract.
 
-# Pré-condições:
-- Node instalado;
-- npm instalado.
+# Preconditions:
+- Node installed;
+- Npm installed.
 
-# Reprodução:
+# Run project:
 
-1 - Clonar projeto:
+1 - Clone project:
 ```
 git clone https://github.com/marciovrl/example-supertest.git
 ```
 
-2 - Executar comando node para instalar depedencias:
+2 - Execute command node to install depedencias:
 ```
 npm install
 ```
 
-3 - Executar comandos de teste:
+3 - Execute test commands:
 ```
-    npm run test-feature #Rodar testes nos endpoint e validar funcionamento de cada verbo.
-    npm test-contract #Rodar testes de contrato.
-    npm test #Rodar todos os testes.
+    npm run test-feature # Run endpoint tests and validate the functioning of each verb..
+    npm run test-contract # Run contract tests.
+    npm run test # Run all tests.
 ```
-# Estrutura do projeto
+# Structure of the project
 
 ```
 |
 | - test
-    | contracts
-    | helper
-    | schemas
-    | steps
-| - `.gitignore`
-| - `package.json`  
-| - `README.md`  
+    | - contracts
+    | - helper
+    | - schemas
+    | - steps
+| - .gitignore
+| - package.json
+| - README.md
 ```
