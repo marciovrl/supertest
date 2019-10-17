@@ -1,15 +1,12 @@
 # example-supertest
 
-Example of API tests using Supertest.
+Example of API tests using Supertest.<br>
 
-This repository aims to be the field of training and the study of Supertest.
-
-I used the `https://quartz-drain.glitch.me/` API and developed the automation of an `/products` endpoint by testing the calls and the contract.
+For example, let's use a fake API [JSONPlaceholder](https://jsonplaceholder.typicode.com/) to run the tests.<br>
 
 # Preconditions:
 
 - Node installed;
-- Npm installed.
 
 # Run project:
 
@@ -27,8 +24,14 @@ npm install
 
 3 - Execute test commands:
 
-```
-    npm run test-feature # Run endpoint tests and validate the functioning of each verb..
-    npm run test-contract # Run contract tests.
-    npm run test # Run all tests.
-```
+### `npm run test-feature`
+
+Run endpoint tests and validate the functioning of each verb.<br>
+
+### `npm run test-contract`
+
+Run contract tests.<br>
+
+### `npm run test`
+
+Run all tests.<br>
