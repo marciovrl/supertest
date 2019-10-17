@@ -1,8 +1,7 @@
 const { schema } = require("../schemas/schema_products");
 const baseUrl = require("../helper/baseUrl");
 
-let request = require("supertest"),
-  joiAssert = require("joi-assert");
+let request = require("supertest");
 
 let url = baseUrl + "/products";
 
@@ -12,8 +11,7 @@ describe("Contract testing of endpoint /products", () => {
       .get("/")
       .expect("Content-Type", /json/)
       .end(function(err, res) {
-        let result = JSON.parse(res.text);
-        joiAssert(res.body[0], schema);
+        schema.validate(res.body[0]);
         done();
       });
   });
@@ -24,8 +22,7 @@ describe("Contract testing of endpoint /products", () => {
       .send({ name: "tatu", value: "10", quantity: "5" })
       .expect("Content-Type", /json/)
       .end(function(err, res) {
-        let result = JSON.parse(res.text);
-        joiAssert(res.body, schema);
+        schema.validate(res.body[0]);
         done();
       });
   });

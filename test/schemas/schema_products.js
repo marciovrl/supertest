@@ -1,4 +1,4 @@
-let Joi = require("joi");
+let Joi = require("@hapi/joi");
 
 let schema = Joi.object({
   name: Joi.string(),
