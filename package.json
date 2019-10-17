@@ -24,8 +24,7 @@
   "dependencies": {
     "chai": "4.2.0",
     "supertest": "4.0.2",
-    "joi": "^13.0.2",
-    "joi-assert": "0.0.3",
+    "@hapi/joi": "16.1.7",
     "mocha": "6.2.1",
     "mocha-parallel-tests": "2.2.2"
   }
