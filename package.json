@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test-feature": "mocha-parallel-tests ./test/test/steps/ --timeout 10000",
-    "test-contract": "mocha-parallel-tests ./test/test/contracts/ --timeout 10000",
-    "test": "mocha-parallel-tests ./test/test/* --timeout 10000"
+    "test-feature": "mocha-parallel-tests ./test/test/steps/ --timeout 10000 --reporter mochawesome",
+    "test-contract": "mocha-parallel-tests ./test/test/contracts/ --timeout 10000 --reporter mochawesome",
+    "test": "mocha-parallel-tests ./test/test/* --timeout 10000 --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "supertest": "4.0.2",
     "@hapi/joi": "16.1.7",
     "mocha": "6.2.1",
-    "mocha-parallel-tests": "2.2.2"
+    "mocha-parallel-tests": "2.2.2",
+    "mochawesome": "4.1.0"
   }
 }

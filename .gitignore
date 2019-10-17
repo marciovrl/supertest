@@ -167,4 +167,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Report test
+mochawesome-report    
+
 # End of https://www.gitignore.io/api/node,linux,macos,windows,visualstudiocode
+
+mochawesome-report    
