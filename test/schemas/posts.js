@@ -1,9 +1,9 @@
 let Joi = require("@hapi/joi");
 
 let schema = Joi.object({
-  name: Joi.string(),
-  value: Joi.number(),
-  quantity: Joi.number()
+  id: Joi.number(),
+  tittle: Joi.number(),
+  body: Joi.number()
 });
 
 module.exports = { schema };

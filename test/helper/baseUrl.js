@@ -1,3 +1,3 @@
-let url = "https://quartz-drain.glitch.me/";
+let url = "https://jsonplaceholder.typicode.com/";
 
 module.exports = url;
