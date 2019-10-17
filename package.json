@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test-feature": "mocha-parallel-tests ./test/steps/ --timeout 10000",
-    "test-contract": "mocha-parallel-tests ./test/contracts/ --timeout 10000",
-    "test": "mocha-parallel-tests ./test/steps/ ./test/contracts/ --timeout 10000"
+    "test-feature": "mocha-parallel-tests ./test/test/steps/ --timeout 10000",
+    "test-contract": "mocha-parallel-tests ./test/test/contracts/ --timeout 10000",
+    "test": "mocha-parallel-tests ./test/test/* --timeout 10000"
   },
   "repository": {
     "type": "git",
