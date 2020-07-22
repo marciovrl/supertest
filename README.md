@@ -1,37 +1,34 @@
 # example-supertest
 
-Example of API tests using Supertest.<br>
+Example of tests (functional and contract) of an API using Supertest. The API used for testing is [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
 
-For example, let's use a fake API [JSONPlaceholder](https://jsonplaceholder.typicode.com/) to run the tests.<br>
+## Getting started
 
-# Preconditions:
+### Download and configure
 
-- Node installed;
+- [Node](https://nodejs.org/en/)<br>
+- [NPM](https://www.npmjs.com/)<br>
 
-# Run project:
+## Build
 
-1 - Clone project:
+### `git clone https://github.com/marciovrl/supertest.git`
 
-```
-git clone https://github.com/marciovrl/example-supertest.git
-```
+Clone the project
 
-2 - Execute command node to install depedencias:
+### `npm install`
 
-```
-npm install
-```
+Install the dependencies
 
-3 - Execute test commands:
+## Commands
 
-### `npm run test-feature`
+### `npm run feature-test`
 
-Run endpoint tests and validate the functioning of each verb.<br>
+Run functional tests
 
-### `npm run test-contract`
+### `npm run contract-test`
 
-Run contract tests.<br>
+Run contract tests
 
 ### `npm run test`
 
-Run all tests.<br>
+Run all tests
