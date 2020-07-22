@@ -8,9 +8,9 @@
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint --fix \"src/**\"",
-    "test-feature": "mocha-parallel-tests ./src/test/steps/ --timeout 10000 --reporter mochawesome",
-    "test-contract": "mocha-parallel-tests ./src/test/contracts/ --timeout 10000 --reporter mochawesome",
-    "test": "mocha-parallel-tests ./src/test/* --timeout 10000 --reporter mochawesome"
+    "feature-test": "mocha ./src/test/steps/ --reporter mochawesome",
+    "contract-test": "mocha ./src/test/contracts/ --reporter mochawesome",
+    "test": "mocha ./src/test/*  --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -25,9 +25,8 @@
   "dependencies": {
     "@hapi/joi": "16.1.7",
     "chai": "4.2.0",
-    "mocha": "6.2.1",
-    "mocha-parallel-tests": "2.2.2",
-    "mochawesome": "4.1.0",
+    "mocha": "8.0.1",
+    "mochawesome": "6.1.1",
     "supertest": "4.0.2"
   },
   "devDependencies": {
