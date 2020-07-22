@@ -1,3 +1,3 @@
-let url = "https://jsonplaceholder.typicode.com/";
+const url = 'https://jsonplaceholder.typicode.com/';
 
 module.exports = url;
