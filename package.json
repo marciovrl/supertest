@@ -1,32 +1,38 @@
 {
-  "name": "example-supertest",
-  "version": "2.0.0",
+  "name": "supertest-example",
+  "version": "3.0.0",
   "description": "Example API testing using Supertest",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "lint": "./node_modules/.bin/eslint --fix \"src/**\"",
     "test-feature": "mocha-parallel-tests ./src/test/steps/ --timeout 10000 --reporter mochawesome",
     "test-contract": "mocha-parallel-tests ./src/test/contracts/ --timeout 10000 --reporter mochawesome",
     "test": "mocha-parallel-tests ./src/test/* --timeout 10000 --reporter mochawesome"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marciovrl/example-supertest.git"
+    "url": "git+https://github.com/marciovrl/supertest.git"
   },
   "author": "Márcio Lemos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marciovrl/example-supertest/issues"
+    "url": "https://github.com/marciovrl/supertest/issues"
   },
-  "homepage": "https://github.com/marciovrl/example-supertest#readme",
+  "homepage": "https://github.com/marciovrl/supertest#readme",
   "dependencies": {
-    "chai": "4.2.0",
-    "supertest": "4.0.2",
     "@hapi/joi": "16.1.7",
+    "chai": "4.2.0",
     "mocha": "6.2.1",
     "mocha-parallel-tests": "2.2.2",
-    "mochawesome": "4.1.0"
+    "mochawesome": "4.1.0",
+    "supertest": "4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
   }
 }
