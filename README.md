@@ -4,12 +4,12 @@ Example of tests (functional and contract) of an API using Supertest. The API us
 
 ## Getting started
 
-### Download and configure
+### Download
 
 - [Node](https://nodejs.org/en/)<br>
 - [NPM](https://www.npmjs.com/)<br>
 
-## Prepare
+## Configuration
 
 ### `git clone https://github.com/marciovrl/supertest.git`
 
