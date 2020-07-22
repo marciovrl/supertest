@@ -9,7 +9,7 @@ Example of tests (functional and contract) of an API using Supertest. The API us
 - [Node](https://nodejs.org/en/)<br>
 - [NPM](https://www.npmjs.com/)<br>
 
-## Build
+## Prepare
 
 ### `git clone https://github.com/marciovrl/supertest.git`
 
